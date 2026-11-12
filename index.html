@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jedstep Skills Academy | A Journey through Education</title>
+  <meta name="description" content="Jedstep Skills Academy - Learn, Inspire, Empower. Practical English communication, soft skills, public speaking and career guidance in Dindigul, Tamil Nadu.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 50: '#FBF6E9', 100: '#F5EBD0', 200: '#EAD9A0', 300: '#DFC670', 400: '#D4B340', 500: '#C9A227', 600: '#A8841F', 700: '#876617', 800: '#66490F', 900: '#452C07' },
+            navy: { 50: '#E8EEF4', 100: '#C5D4E3', 200: '#8FA9C7', 300: '#5A7EAB', 400: '#3A5F8C', 500: '#1A3A5C', 600: '#152E4A', 700: '#102238', 800: '#0B1726', 900: '#060B14' },
+            cream: '#FDFBF7'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            display: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-gradient { background: linear-gradient(135deg, #1A3A5C 0%, #0B1726 60%, #152E4A 100%); }
+    .gold-gradient { background: linear-gradient(135deg, #C9A227 0%, #D4B340 50%, #A8841F 100%); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(26,58,92,0.15); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #C9A227; transition: width 0.3s; }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    .float-anim { animation: float 4s ease-in-out infinite; }
+  </style>
+</head>
+<body class="font-sans bg-cream text-navy-800 antialiased">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/logo.svg" alt="Jedstep Logo" class="h-14 w-auto">
+          <div class="hidden sm:block">
+            <span class="font-display text-xl font-bold text-navy-700">Jedstep</span>
+            <span class="block text-xs text-gold-600 tracking-wider">SKILLS ACADEMY</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="nav-link active text-navy-700 font-medium">Home</a>
+          <a href="about.html" class="nav-link text-navy-600 hover:text-navy-800 font-medium">About</a>
+          <a href="courses.html" class="nav-link text-navy-600 hover:text-navy-800 font-medium">Courses</a>
+          <a href="vision.html" class="nav-link text-navy-600 hover:text-navy-800 font-medium">Vision & Mission</a>
+          <a href="contact.html" class="nav-link text-navy-600 hover:text-navy-800 font-medium">Contact</a>
+          <a href="login.html" class="gold-gradient text-white px-5 py-2.5 rounded-full font-semibold shadow-md hover:shadow-lg transition">Student Login</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-navy-700 text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block py-2 text-navy-700 font-medium">Home</a>
+        <a href="about.html" class="block py-2 text-navy-600">About</a>
+        <a href="courses.html" class="block py-2 text-navy-600">Courses</a>
+        <a href="vision.html" class="block py-2 text-navy-600">Vision & Mission</a>
+        <a href="contact.html" class="block py-2 text-navy-600">Contact</a>
+        <a href="login.html" class="block py-2 gold-gradient text-white text-center rounded-full font-semibold">Student Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-gradient pt-32 pb-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-20 right-10 w-72 h-72 bg-gold-400 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 left-10 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-white">
+          <p class="text-gold-300 font-medium tracking-widest uppercase text-sm mb-4">A Journey through Education</p>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            Every step towards <span class="text-gold-400">excellence</span> and proficiency
+          </h1>
+          <p class="text-lg text-navy-100 mb-8 max-w-xl">
+            At Jedstep Skills Academy we ignite curiosity, build confident communicators and prepare learners for real-world success through immersive, experience-driven training.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="courses.html" class="gold-gradient text-navy-900 px-8 py-3.5 rounded-full font-bold shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5">Explore Courses</a>
+            <a href="contact.html" class="bg-white/10 border border-white/30 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-white/20 transition">Partner With Us</a>
+          </div>
+        </div>
+        <div class="hidden lg:flex justify-center">
+          <div class="relative">
+            <div class="w-80 h-80 rounded-full bg-gradient-to-br from-gold-400/30 to-transparent absolute -top-6 -right-6"></div>
+            <img src="images/logo.svg" alt="Jedstep" class="w-72 float-anim relative z-10 drop-shadow-2xl">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission strip -->
+  <section class="bg-gold-500 py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-navy-900 font-semibold text-lg md:text-xl tracking-wide">
+        <span class="mx-2">To Learn.</span>
+        <span class="mx-2">To Inspire.</span>
+        <span class="mx-2">To Empower.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- About preview -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-gold-600 font-semibold tracking-wider text-sm uppercase">About Us</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold text-navy-800 mt-2 mb-6">Education that ignites curiosity</h2>
+          <p class="text-navy-600 leading-relaxed mb-4">
+            At Jedstep Skills Academy, we believe education is not merely about acquiring knowledge, but about igniting curiosity, discovering potential and nurturing a lifelong passion for learning.
+          </p>
+          <p class="text-navy-600 leading-relaxed mb-6">
+            Through immersive, experience-driven learning, we go beyond conventional instruction to inspire students to think independently, communicate purposefully and continuously strive for excellence.
+          </p>
+          <a href="about.html" class="inline-flex items-center gap-2 text-gold-700 font-semibold hover:gap-3 transition-all">
+            Read our full story <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-white p-6 rounded-2xl shadow-md card-hover border border-gold-100">
+            <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center text-white text-xl mb-4"><i class="fas fa-comments"></i></div>
+            <h3 class="font-semibold text-navy-800 mb-2">Learner-Centred</h3>
+            <p class="text-sm text-navy-600">Less trainer talk. More student conversations, challenges and hands-on practice.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-md card-hover border border-gold-100 mt-8">
+            <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center text-white text-xl mb-4"><i class="fas fa-microphone-alt"></i></div>
+            <h3 class="font-semibold text-navy-800 mb-2">Real Situations</h3>
+            <p class="text-sm text-navy-600">Students practise conversations, interviews and workplace scenarios before facing them in real life.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-md card-hover border border-gold-100">
+            <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center text-white text-xl mb-4"><i class="fas fa-users"></i></div>
+            <h3 class="font-semibold text-navy-800 mb-2">Every Voice Matters</h3>
+            <p class="text-sm text-navy-600">We create opportunities for hesitant learners, not just confident speakers, to participate and progress.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-md card-hover border border-gold-100 mt-8">
+            <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center text-white text-xl mb-4"><i class="fas fa-trophy"></i></div>
+            <h3 class="font-semibold text-navy-800 mb-2">Confidence by Experience</h3>
+            <p class="text-sm text-navy-600">Repeated opportunities to speak, attempt, improve and succeed replace motivational advice alone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programmes highlight -->
+  <section class="py-20 bg-navy-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-gold-400 font-semibold tracking-wider text-sm uppercase">Our Programmes</span>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mt-2">Skills that open doors</h2>
+        <p class="text-navy-200 mt-4 max-w-2xl mx-auto">Practical, interactive programmes designed to build fluency, confidence and employability.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-navy-700/60 backdrop-blur rounded-2xl p-6 border border-navy-600 card-hover">
+          <i class="fas fa-language text-gold-400 text-3xl mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Applied English Communication</h3>
+          <p class="text-navy-200 text-sm">Focuses on using English in practical situations and building fluency.</p>
+        </div>
+        <div class="bg-navy-700/60 backdrop-blur rounded-2xl p-6 border border-navy-600 card-hover">
+          <i class="fas fa-handshake text-gold-400 text-3xl mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Soft Skills Training</h3>
+          <p class="text-navy-200 text-sm">Become a people person and climb up the ladder with essential interpersonal skills.</p>
+        </div>
+        <div class="bg-navy-700/60 backdrop-blur rounded-2xl p-6 border border-navy-600 card-hover">
+          <i class="fas fa-bullhorn text-gold-400 text-3xl mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Confidence & Public Speaking</h3>
+          <p class="text-navy-200 text-sm">Overcome stage fear and deliver with impact in any setting.</p>
+        </div>
+        <div class="bg-navy-700/60 backdrop-blur rounded-2xl p-6 border border-navy-600 card-hover">
+          <i class="fas fa-briefcase text-gold-400 text-3xl mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Career Guidance & Employability</h3>
+          <p class="text-navy-200 text-sm">Make informed choices and plan your future with the right skills.</p>
+        </div>
+        <div class="bg-navy-700/60 backdrop-blur rounded-2xl p-6 border border-navy-600 card-hover">
+          <i class="fas fa-briefcase text-gold-400 text-3xl mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Business Communication</h3>
+          <p class="text-navy-200 text-sm">Master professional conversations and workplace interactions.</p>
+        </div>
+        <div class="bg-navy-700/60 backdrop-blur rounded-2xl p-6 border border-navy-600 card-hover">
+          <i class="fas fa-mountain text-gold-400 text-3xl mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Motivational Sessions</h3>
+          <p class="text-navy-200 text-sm">Stay inspired, positive and future-focused.</p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="courses.html" class="inline-block gold-gradient text-navy-900 px-8 py-3.5 rounded-full font-bold shadow-lg hover:shadow-xl transition">View All Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAPL Approach -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-gold-600 font-semibold tracking-wider text-sm uppercase">Our Method</span>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-navy-800 mt-2">PAPL Approach</h2>
+        <p class="text-navy-500 mt-2">(Pen and Paper Less)</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center p-6">
+          <div class="w-16 h-16 mx-auto gold-gradient rounded-full flex items-center justify-center text-white text-2xl mb-4 shadow-lg"><i class="fas fa-comments"></i></div>
+          <h3 class="font-semibold text-navy-800 mb-2">Learn by Doing</h3>
+          <p class="text-sm text-navy-600">Learn through speaking, doing and reflecting in an engaging environment.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-16 h-16 mx-auto gold-gradient rounded-full flex items-center justify-center text-white text-2xl mb-4 shadow-lg"><i class="fas fa-users"></i></div>
+          <h3 class="font-semibold text-navy-800 mb-2">Participation First</h3>
+          <p class="text-sm text-navy-600">PAPL builds learning through participation, practice and interaction.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-16 h-16 mx-auto gold-gradient rounded-full flex items-center justify-center text-white text-2xl mb-4 shadow-lg"><i class="fas fa-leaf"></i></div>
+          <h3 class="font-semibold text-navy-800 mb-2">Natural Acquisition</h3>
+          <p class="text-sm text-navy-600">Acquire language naturally rather than through forced learning.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-16 h-16 mx-auto gold-gradient rounded-full flex items-center justify-center text-white text-2xl mb-4 shadow-lg"><i class="fas fa-repeat"></i></div>
+          <h3 class="font-semibold text-navy-800 mb-2">Guided Fluency</h3>
+          <p class="text-sm text-navy-600">Build fluency and confidence through guided imitation and purposeful repetition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-r from-gold-500 to-gold-600">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-navy-900 mb-4">Let's build confident communicators and future leaders together.</h2>
+      <p class="text-navy-800 mb-8 text-lg">Ready to take the next step?</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contact.html" class="bg-navy-800 text-white px-8 py-3.5 rounded-full font-bold hover:bg-navy-900 transition shadow-lg">Get in Touch</a>
+        <a href="login.html" class="bg-white text-navy-800 px-8 py-3.5 rounded-full font-bold hover:bg-cream transition shadow-lg">Student Portal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-900 text-navy-200 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="images/logo.svg" alt="Jedstep" class="h-12">
+            <div>
+              <span class="font-display text-xl font-bold text-white">Jedstep</span>
+              <span class="block text-xs text-gold-400">SKILLS ACADEMY</span>
+            </div>
+          </div>
+          <p class="text-sm leading-relaxed max-w-md">A Journey through Education. Every step towards excellence and proficiency. Based in Dindigul, Tamil Nadu.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-gold-400 transition">About Us</a></li>
+            <li><a href="courses.html" class="hover:text-gold-400 transition">Courses</a></li>
+            <li><a href="vision.html" class="hover:text-gold-400 transition">Vision & Mission</a></li>
+            <li><a href="contact.html" class="hover:text-gold-400 transition">Contact</a></li>
+            <li><a href="login.html" class="hover:text-gold-400 transition">Student Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-2"><i class="fas fa-phone mt-1 text-gold-400"></i> +91 63832 62557</li>
+            <li class="flex items-start gap-2"><i class="fas fa-envelope mt-1 text-gold-400"></i> jedstepskills@gmail.com</li>
+            <li class="flex items-start gap-2"><i class="fas fa-map-marker-alt mt-1 text-gold-400"></i> Dindigul, Tamil Nadu, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-navy-700 pt-8 text-center text-sm">
+        <p>&copy; 2026 Jedstep Skills Academy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
